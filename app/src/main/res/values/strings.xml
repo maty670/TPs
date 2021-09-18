@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CompraVenta</string>
+
+    <string name="TxtTitulo">Titulo</string>
+    <string name="TxtDescripcion">Descripcion (opcional)</string>
+    <string name="TxtCorreo">Correo electronico</string>
+    <string name="TxtPrecio">Precio</string>
+    <string name="TxtCategoria">Categoria</string>
+    <string name="TxtDescEnvio">Ofrecer descuento de envio</string>
+    <string name="TxtRetiro">Retiro en persona</string>
+    <string name="TxtDirRetiro">Direccion de retiro</string>
+    <string name="TxtTerminos">Aceptar terminos y condiciones</string>
+
 </resources>

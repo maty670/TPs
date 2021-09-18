@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="txtHeight">35dp</dimen>
+    <dimen name="txtWidth">200dp</dimen>
+
+    <dimen name="inputHeight">35dp</dimen>
+    <dimen name="inputWidth">410dp</dimen>
+
+    <dimen name="txtSize">16sp</dimen>
+
+
+</resources>
