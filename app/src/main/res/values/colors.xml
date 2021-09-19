@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="Fondo">#546C6B6B</color>
 
-    <color name="Fondo">#3C3C3C</color>
     <color name="txtColor">#B8734D</color>
-    <color name="inputColor">#B8734D</color>
+    <color name="inputColor">#FFFFFF</color>
+
+    <color name="txtBotonColor">#020202</color>
+    <color name="botonColor">#FFFFFF</color>
+
+    <color name="SpinnerColor">#C3BEBE</color>
+
+
+
 </resources>

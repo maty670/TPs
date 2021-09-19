@@ -10,5 +10,15 @@
     <string name="TxtRetiro">Retiro en persona</string>
     <string name="TxtDirRetiro">Direccion de retiro</string>
     <string name="TxtTerminos">Aceptar terminos y condiciones</string>
+    <string name="TxtPublicar">Publicar</string>
+
+    <string-array name="Categorias">
+        <item>INDUMENTARIA</item>
+        <item>ELECTRONICA</item>
+        <item>ENTRETENIMIENTO</item>
+        <item>JARDIN</item>
+        <item>VEHICULOS</item>
+        <item>JUGUETES</item>
+    </string-array>
 
 </resources>
