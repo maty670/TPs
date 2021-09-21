@@ -13,7 +13,8 @@
     <dimen name="botonWidth">200dp</dimen>
     <dimen name="txtBotonSize">14sp</dimen>
 
-
+    <dimen name="seekBarHeight">350dp</dimen>
+    <dimen name="seekBarWidth">25dp</dimen>
 
 
 
