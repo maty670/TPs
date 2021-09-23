@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -17,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
     public EditText txtDescripcion;
     public EditText txtCorreo;
     public EditText txtPrecio;
-    public Button BtnAceptar;
     public Spinner SpinnerCategorias;
-    public TextView textoDescuento;
+    public TextView txtDescuento;
     public Switch SwitchDescuento;
     public SeekBar SeekBarDescuento;
-
+    public CheckBox CheckBoxTerminos;
+    public Button BtnAceptar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,28 +37,47 @@ public class MainActivity extends AppCompatActivity {
         SpinnerCategorias = findViewById(R.id.spinnerCategoria);
         BtnAceptar = findViewById(R.id.buttonAceptar);
         SeekBarDescuento = findViewById(R.id.seekBarDescuento);
-        textoDescuento = findViewById(R.id.textViewDescuento);
+        txtDescuento = findViewById(R.id.textViewDescuento);
         SwitchDescuento = findViewById(R.id.switchDescuento);
-
+        CheckBoxTerminos = findViewById(R.id.checkBoxTerminos);
         BarraDescuentos(SeekBarDescuento);
 
 
     }
 
     public void ValidarCampos(View view) {
-        if (txtTitulo.getText().toString().equals("") || txtCorreo.getText().toString().equals("") || txtPrecio.getText().toString().equals(""))
-            Toast.makeText(this, "Campos incompletos", Toast.LENGTH_SHORT).show();
+        String Titulo = txtTitulo.getText().toString();
+        String Precio = txtPrecio.getText().toString();
+        String Correo = txtCorreo.getText().toString();
+        Boolean DescuentoCheck = SwitchDescuento.isChecked();
+        Boolean DescuentoNoCheck = !SwitchDescuento.isChecked();
+        int Descuento = SeekBarDescuento.getProgress();
+        Boolean TerminosCheck = CheckBoxTerminos.isChecked();
+        Boolean TerminosNoCheck = !CheckBoxTerminos.isChecked();
 
+
+        if (Titulo.equals("") | Precio.equals(""))
+            Toast.makeText(this,"Campos Titulo y Precio no pueden estar vacios", Toast.LENGTH_SHORT).show();
+        else if(Integer.parseInt(Precio)<=0)
+            Toast.makeText(this, "El precio debe ser mayor a 0", Toast.LENGTH_SHORT).show();
+        else if(Correo.length()>0 & (!(Correo.contains("@")) | !(Correo.lastIndexOf("@")<Correo.length()-3))) {
+            Toast.makeText(this, "Correo debe contener al menos 1 @ seguido de 3 letras", Toast.LENGTH_SHORT).show();
+        }
+        else if(DescuentoCheck & Descuento==0){
+            Toast.makeText(this, "Descuento debe ser mayor a 0%", Toast.LENGTH_SHORT).show();
+        }else if (TerminosNoCheck)
+            Toast.makeText(this, "Debe aceptar los terminos y condiciones", Toast.LENGTH_SHORT).show();
 
     }
+
     public void ActivarDescuento(View view) {
         if (SwitchDescuento.isChecked()) {
             SeekBarDescuento.setVisibility(View.VISIBLE);
-            textoDescuento.setVisibility(View.VISIBLE);
+            txtDescuento.setVisibility(View.VISIBLE);
         }
         else{
-            SeekBarDescuento.setVisibility(View.INVISIBLE);
-            textoDescuento.setVisibility(View.INVISIBLE);
+            SeekBarDescuento.setVisibility(View.GONE);
+            txtDescuento.setVisibility(View.GONE);
         }
     }
 
@@ -73,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onProgressChanged(SeekBar seekBar,
                                                   int progress, boolean fromUser) {
-                        textoDescuento.setText(String.valueOf(progress) + "%");
+                        txtDescuento.setText(String.valueOf(progress) + "%");
                     }
 
                     @Override

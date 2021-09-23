@@ -1,16 +1,22 @@
 <resources>
     <string name="app_name">CompraVenta</string>
 
-    <string name="TxtTitulo">Titulo</string>
-    <string name="TxtDescripcion">Descripcion (opcional)</string>
-    <string name="TxtCorreo">Correo electronico</string>
-    <string name="TxtPrecio">Precio</string>
-    <string name="TxtCategoria">Categoria</string>
-    <string name="TxtDescEnvio">Ofrecer descuento de envio</string>
-    <string name="TxtRetiro">Retiro en persona</string>
-    <string name="TxtDirRetiro">Direccion de retiro</string>
-    <string name="TxtTerminos">Aceptar terminos y condiciones</string>
-    <string name="TxtPublicar">Publicar</string>
+    <string name="Titulo">Titulo</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="Correo">Correo electronico (opcional)</string>
+    <string name="Precio">Precio</string>
+    <string name="Categoria">Categoria</string>
+    <string name="DescEnvio">Ofrecer descuento de envio</string>
+    <string name="Retiro">Retiro en persona</string>
+    <string name="DirRetiro">Direccion de retiro</string>
+    <string name="Terminos">Aceptar terminos y condiciones</string>
+    <string name="Publicar">Publicar</string>
+
+    <string name="TituloHint">Titulo</string>
+    <string name="DescripcionHint">Descripcion(opcional)</string>
+    <string name="CorreoHint">Correo electronico(al menos 1 @ seguido por 3 letras)</string>
+    <string name="PrecioHint">Precio</string>
+
 
     <string-array name="Categorias">
         <item>INDUMENTARIA</item>
