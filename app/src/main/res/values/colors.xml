@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="Fondo">#546C6B6B</color>
+    <color name="Fondo">#FFFFFF</color>
 
-    <color name="txtColor">#B8734D</color>
-    <color name="inputColor">#FFFFFF</color>
+    <color name="txtColor">#000000</color>
+    <color name="inputColor">#111F71</color>
+    <color name="inputColorHint">#000000</color>
+
 
     <color name="txtBotonColor">#020202</color>
     <color name="botonColor">#FFFFFF</color>

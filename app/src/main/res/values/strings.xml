@@ -14,8 +14,9 @@
 
     <string name="TituloHint">Titulo</string>
     <string name="DescripcionHint">Descripcion(opcional)</string>
-    <string name="CorreoHint">Correo electronico(al menos 1 @ seguido por 3 letras)</string>
+    <string name="CorreoHint">al menos 1 @ seguido por 3 letras</string>
     <string name="PrecioHint">Precio</string>
+    <string name="RetiroHint">Direccion de retiro</string>
 
 
     <string-array name="Categorias">

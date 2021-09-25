@@ -30,6 +30,7 @@
                 android:id="@+id/editTitulo"
                 android:layout_width="@dimen/inputWidth"
                 android:layout_height="@dimen/inputHeight"
+                android:backgroundTint="@color/inputColorHint"
                 android:hint="@string/TituloHint"
                 android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize" />
@@ -47,6 +48,7 @@
                 android:layout_width="@dimen/inputWidth"
                 android:layout_height="@dimen/inputHeight"
                 android:hint="@string/DescripcionHint"
+                android:backgroundTint="@color/inputColorHint"
                 android:inputType="textMultiLine"
                 android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize" />
@@ -64,6 +66,7 @@
                 android:layout_width="@dimen/inputWidth"
                 android:layout_height="@dimen/inputHeight"
                 android:hint="@string/CorreoHint"
+                android:backgroundTint="@color/inputColorHint"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize"
@@ -82,6 +85,7 @@
                 android:layout_width="@dimen/inputWidth"
                 android:layout_height="@dimen/inputHeight"
                 android:hint="@string/PrecioHint"
+                android:backgroundTint="@color/inputColorHint"
                 android:inputType="number"
                 android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize" />
@@ -99,8 +103,7 @@
                 android:layout_width="@dimen/inputWidth"
                 android:layout_height="@dimen/inputHeight"
                 android:entries="@array/Categorias"
-                android:text="Seleccione Categoria"
-                android:spinnerMode="dropdown" />
+                android:text="Seleccione Categoria" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -143,6 +146,32 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone" />
             </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxRetiro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="ActivarRetiro"
+                android:text="@string/Retiro" />
+
+            <TextView
+                android:id="@+id/txtRetiro"
+                android:layout_width="@dimen/txtWidth"
+                android:layout_height="@dimen/txtHeight"
+                android:text="@string/DirRetiro"
+                android:textColor="@color/txtColor"
+                android:textSize="@dimen/txtSize"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editRetiro"
+                android:layout_width="@dimen/inputWidth"
+                android:layout_height="@dimen/inputHeight"
+                android:hint="@string/RetiroHint"
+                android:backgroundTint="@color/inputColorHint"
+                android:textColor="@color/inputColor"
+                android:textSize="@dimen/txtSize"
+                android:visibility="gone" />
 
             <CheckBox
                 android:id="@+id/checkBoxTerminos"
