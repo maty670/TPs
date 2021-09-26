@@ -1,8 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.CompraVenta" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Primary brand color. -->
+        <item name="android:colorBackground">@color/Fondo</item>
+        <item name="colorPrimary">@color/verde</item>
+        <item name="colorPrimaryDark">@color/negro</item>
 
-        <!-- Customize your theme here. -->
+
+        <item name="android:textColor">@color/amarillo</item>
+        <item name="android:editTextColor">@color/blanco</item>
+        <item name="android:textColorHint">@color/gris</item>
+
+        <item name="android:textColorPrimaryDisableOnly">@color/amarillo</item>
+        <item name="colorControlActivated">@color/verde</item>
+        <item name="colorControlNormal">@color/blanco</item>
+
+        <item name="colorButtonNormal">@color/blanco</item>
+
+
+
+
     </style>
+
+
+
 </resources>

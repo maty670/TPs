@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (TituloVacio | PrecioVacio | (RetiroCheck & RetiroVacio ))
-            Toast.makeText(this,"Titulo, Precio y Retiro no pueden estar vacios", Toast.LENGTH_SHORT).show();
-        else if(Integer.parseInt(Precio)<=0)
+            Toast.makeText(this,"Titulo, Precio y Direccion de Retiro no pueden estar vacios", Toast.LENGTH_SHORT).show();
+        else if(Long.parseLong(Precio)<=0)
             Toast.makeText(this, "El precio debe ser mayor a 0", Toast.LENGTH_SHORT).show();
         else if(!CorreoVacio & (!(Correo.contains("@")) | !(Correo.lastIndexOf("@")<Correo.length()-3)))
             Toast.makeText(this, "Correo debe contener al menos 1 @ seguido de 3 letras", Toast.LENGTH_SHORT).show();
@@ -99,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Descuento debe ser mayor a 0%", Toast.LENGTH_SHORT).show();
         else if (TerminosNoCheck)
             Toast.makeText(this, "Debe aceptar los terminos y condiciones", Toast.LENGTH_SHORT).show();
-
+        else
+            Toast.makeText(this, "Formulario guardado con exito", Toast.LENGTH_SHORT).show();
 
 
     }

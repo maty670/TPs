@@ -5,16 +5,14 @@
     <dimen name="txtWidth">250dp</dimen>
     <dimen name="txtSize">16sp</dimen>
 
-    <dimen name="inputHeight">45dp</dimen>
-    <dimen name="inputWidth">410dp</dimen>
     <dimen name="txtInputSize">14sp</dimen>
 
-    <dimen name="botonHeight">40dp</dimen>
-    <dimen name="botonWidth">200dp</dimen>
     <dimen name="txtBotonSize">14sp</dimen>
 
     <dimen name="seekBarHeight">350dp</dimen>
     <dimen name="seekBarWidth">25dp</dimen>
+
+
 
 
 

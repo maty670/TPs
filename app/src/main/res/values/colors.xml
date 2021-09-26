@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="Fondo">#FFFFFF</color>
+    <color name="azulclaro">#FF018786</color>
+    <color name="azuloscuro">#014545</color>
+    <color name="purpura">#68286D</color>
+    <color name="negro">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="verde">#208006</color>
 
-    <color name="txtColor">#000000</color>
-    <color name="inputColor">#111F71</color>
-    <color name="inputColorHint">#000000</color>
+
+    <color name="Fondo">#D3333131</color>
+
+    <color name="amarillo">#BA9A3E</color>
+    <color name="blanco">#FDFEFF</color>
+    <color name="gris">#838282</color>
 
 
-    <color name="txtBotonColor">#020202</color>
-    <color name="botonColor">#FFFFFF</color>
 
-    <color name="SpinnerColor">#C3BEBE</color>
+
 
 
 

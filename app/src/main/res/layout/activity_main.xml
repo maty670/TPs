@@ -23,16 +23,13 @@
                 android:layout_width="@dimen/txtWidth"
                 android:layout_height="@dimen/txtHeight"
                 android:text="@string/Titulo"
-                android:textColor="@color/txtColor"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editTitulo"
-                android:layout_width="@dimen/inputWidth"
-                android:layout_height="@dimen/inputHeight"
-                android:backgroundTint="@color/inputColorHint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/TituloHint"
-                android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize" />
 
             <TextView
@@ -40,17 +37,14 @@
                 android:layout_width="@dimen/txtWidth"
                 android:layout_height="@dimen/txtHeight"
                 android:text="@string/Descripcion"
-                android:textColor="@color/txtColor"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editDescripcion"
-                android:layout_width="@dimen/inputWidth"
-                android:layout_height="@dimen/inputHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/DescripcionHint"
-                android:backgroundTint="@color/inputColorHint"
                 android:inputType="textMultiLine"
-                android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize" />
 
             <TextView
@@ -58,17 +52,14 @@
                 android:layout_width="@dimen/txtWidth"
                 android:layout_height="@dimen/txtHeight"
                 android:text="@string/Correo"
-                android:textColor="@color/txtColor"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editCorreo"
-                android:layout_width="@dimen/inputWidth"
-                android:layout_height="@dimen/inputHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/CorreoHint"
-                android:backgroundTint="@color/inputColorHint"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize"
                 android:visibility="visible" />
 
@@ -77,17 +68,14 @@
                 android:layout_width="@dimen/txtWidth"
                 android:layout_height="@dimen/txtHeight"
                 android:text="@string/Precio"
-                android:textColor="@color/txtColor"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editPrecio"
-                android:layout_width="@dimen/inputWidth"
-                android:layout_height="@dimen/inputHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/PrecioHint"
-                android:backgroundTint="@color/inputColorHint"
                 android:inputType="number"
-                android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize" />
 
             <TextView
@@ -95,13 +83,12 @@
                 android:layout_width="@dimen/txtWidth"
                 android:layout_height="@dimen/txtHeight"
                 android:text="@string/Categoria"
-                android:textColor="@color/txtColor"
                 android:textSize="@dimen/txtSize" />
 
             <Spinner
                 android:id="@+id/spinnerCategoria"
-                android:layout_width="@dimen/inputWidth"
-                android:layout_height="@dimen/inputHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:entries="@array/Categorias"
                 android:text="Seleccione Categoria" />
 
@@ -115,13 +102,13 @@
                     android:layout_width="@dimen/txtWidth"
                     android:layout_height="@dimen/txtHeight"
                     android:text="@string/DescEnvio"
-                    android:textColor="@color/txtColor"
                     android:textSize="@dimen/txtSize" />
 
                 <Switch
                     android:id="@+id/switchDescuento"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/txtHeight"
+                    android:checked="true"
                     android:gravity="end"
                     android:onClick="ActivarDescuento" />
 
@@ -159,17 +146,14 @@
                 android:layout_width="@dimen/txtWidth"
                 android:layout_height="@dimen/txtHeight"
                 android:text="@string/DirRetiro"
-                android:textColor="@color/txtColor"
                 android:textSize="@dimen/txtSize"
                 android:visibility="gone" />
 
             <EditText
                 android:id="@+id/editRetiro"
-                android:layout_width="@dimen/inputWidth"
-                android:layout_height="@dimen/inputHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:hint="@string/RetiroHint"
-                android:backgroundTint="@color/inputColorHint"
-                android:textColor="@color/inputColor"
                 android:textSize="@dimen/txtSize"
                 android:visibility="gone" />
 
@@ -183,11 +167,11 @@
                 android:id="@+id/buttonAceptar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/botonColor"
+                android:layout_margin="12dp"
                 android:gravity="center"
                 android:onClick="ValidarCampos"
                 android:text="@string/Publicar"
-                android:textColor="@color/txtBotonColor"
+                android:textColor="@color/negro"
                 android:textSize="@dimen/txtBotonSize" />
 
         </LinearLayout>
