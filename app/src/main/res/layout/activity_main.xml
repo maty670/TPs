@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/Fondo"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -11,11 +11,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
@@ -108,7 +108,7 @@
                     android:id="@+id/switchDescuento"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/txtHeight"
-                    android:checked="true"
+                    android:checked="false"
                     android:gravity="end"
                     android:onClick="ActivarDescuento" />
 
@@ -123,8 +123,6 @@
                     android:id="@+id/textViewDescuento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="0"
                     android:visibility="gone" />
 
                 <SeekBar
@@ -166,13 +164,13 @@
             <Button
                 android:id="@+id/buttonAceptar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="12dp"
-                android:gravity="center"
                 android:onClick="ValidarCampos"
                 android:text="@string/Publicar"
                 android:textColor="@color/negro"
                 android:textSize="@dimen/txtBotonSize" />
+
 
         </LinearLayout>
     </ScrollView>
