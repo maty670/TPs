@@ -1,16 +1,14 @@
 <resources>
     <string name="app_name">CompraVenta</string>
-    <string name="primary_color">Primary color</string>
-    <string name="button">Button</string>
-    <string name="secondary_color">Secondary color</string>
-    <string name="email_icon">email icon</string>
+    <string name="Pantalla_de_Carga">Compra-Venta</string>
+    <string name="Pantalla_de_Categoria">Categorias</string>
+
 
 
     <string name="Titulo">Titulo</string>
     <string name="Descripcion">Descripcion</string>
     <string name="Correo">Correo electronico (opcional)</string>
     <string name="Precio">Precio</string>
-    <string name="Categoria">Categoria</string>
     <string name="DescEnvio">Ofrecer descuento de envio</string>
     <string name="Retiro">Retiro en persona</string>
     <string name="DirRetiro">Direccion de retiro</string>
@@ -21,16 +19,40 @@
     <string name="DescripcionHint">Descripcion(opcional)</string>
     <string name="CorreoHint">al menos 1 @ seguido por 3 letras</string>
     <string name="PrecioHint">Precio</string>
+    <string name="CategoriaHint">Categoria</string>
     <string name="RetiroHint">Direccion de retiro</string>
 
 
-    <string-array name="Categorias">
-        <item>INDUMENTARIA</item>
-        <item>ELECTRONICA</item>
-        <item>ENTRETENIMIENTO</item>
-        <item>JARDIN</item>
-        <item>VEHICULOS</item>
-        <item>JUGUETES</item>
-    </string-array>
+    <string name="Accesorios_para_Vehículos">Accesorios para Vehículos</string>
+    <string name="Agro">Agro</string>
+    <string name="Alimentos_y_Bebidas">Alimentos y Bebidas</string>
+    <string name="Animales_y_Mascotas">Animales y Mascotas</string>
+    <string name="Autos_Motos_y_Otros">Autos, Motos y Otros</string>
+    <string name="Bebés">Bebés</string>
+    <string name="Belleza_y_Cuidado_Personal">Belleza y Cuidado Personal</string>
+    <string name="Cámaras_y_Accesorios">Cámaras y Accesorios</string>
+    <string name="Celulares_y_Teléfonos">Celulares y Teléfonos</string>
+    <string name="Computación">Computación</string>
+    <string name="Consolas_y_Videojuegos">Consolas y Videojuegos</string>
+    <string name="Construcción">Construcción</string>
+    <string name="Deportes_y_Fitness">Deportes y Fitness</string>
+    <string name="Electrodomésticos_y_Aires_Ac">Electrodomésticos y Aires Ac.</string>
+    <string name="Entradas_para_Eventos">Entradas para Eventos</string>
+    <string name="Herramientas">Herramientas</string>
+    <string name="Hogar_Muebles_y_Jardín">Hogar, Muebles y Jardín</string>
+    <string name="Inmuebles">Inmuebles</string>
+    <string name="Instrumentos_Musicales">Instrumentos Musicales</string>
+    <string name="Joyas_y_Relojes">Joyas y Relojes</string>
+    <string name="Juegos_y_Juguetes">Juegos y Juguetes</string>
+    <string name="Libros_Revistas_y_Comics">Libros, Revistas y Comics</string>
+    <string name="Música_Películas_y_Series">Música, Películas y Series</string>
+    <string name="Ropa_y_Accesorios">Ropa y Accesorios</string>
+    <string name="Salud_y_Equipamiento_Médico">Salud y Equipamiento Médico</string>
+    <string name="Servicios">Servicios</string>
+    <string name="Souvenirs_Cotillón_Fiestas">Souvenirs, Cotillón y Fiestas</string>
+    <string name="Otras_categorías">Otras categorías</string>
+
+
+
 
 </resources>

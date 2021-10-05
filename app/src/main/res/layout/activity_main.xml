@@ -3,10 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@color/Fondo"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ToolBarrColor"
+        app:title="@string/Pantalla_de_Carga"
+        app:titleTextColor="@color/white" />
 
 
     <ScrollView
@@ -20,103 +29,143 @@
 
             <TextView
                 android:id="@+id/txtTitulo"
-                android:layout_width="@dimen/txtWidth"
-                android:layout_height="@dimen/txtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MargenesEditText"
                 android:text="@string/Titulo"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editTitulo"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/editTextlayout_height"
+                android:layout_marginLeft="@dimen/MargenesEditText"
+                android:layout_marginRight="@dimen/MargenesEditText"
+                android:layout_marginBottom="@dimen/MargenesEditText"
+                android:background="#396C52E1"
+                android:gravity="center"
                 android:hint="@string/TituloHint"
-                android:textSize="@dimen/txtSize" />
+                android:textSize="@dimen/editTxtSize" />
 
             <TextView
                 android:id="@+id/txtDescripcion"
-                android:layout_width="@dimen/txtWidth"
-                android:layout_height="@dimen/txtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MargenesEditText"
                 android:text="@string/Descripcion"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editDescripcion"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/editTextlayout_height"
+                android:layout_marginLeft="@dimen/MargenesEditText"
+                android:layout_marginRight="@dimen/MargenesEditText"
+                android:layout_marginBottom="@dimen/MargenesEditText"
+                android:background="#396C52E1"
+                android:gravity="center"
                 android:hint="@string/DescripcionHint"
                 android:inputType="textMultiLine"
-                android:textSize="@dimen/txtSize" />
+                android:textSize="@dimen/editTxtSize" />
+
 
             <TextView
                 android:id="@+id/txtCorreo"
-                android:layout_width="@dimen/txtWidth"
-                android:layout_height="@dimen/txtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MargenesEditText"
                 android:text="@string/Correo"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editCorreo"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/editTextlayout_height"
+                android:layout_marginLeft="@dimen/MargenesEditText"
+                android:layout_marginRight="@dimen/MargenesEditText"
+                android:layout_marginBottom="@dimen/MargenesEditText"
+                android:background="#396C52E1"
+                android:gravity="center"
                 android:hint="@string/CorreoHint"
                 android:inputType="textEmailAddress"
-                android:textSize="@dimen/txtSize"
-                android:visibility="visible" />
+                android:textSize="@dimen/editTxtSize" />
 
             <TextView
                 android:id="@+id/txtPrecio"
-                android:layout_width="@dimen/txtWidth"
-                android:layout_height="@dimen/txtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MargenesEditText"
                 android:text="@string/Precio"
                 android:textSize="@dimen/txtSize" />
 
             <EditText
                 android:id="@+id/editPrecio"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/editTextlayout_height"
+                android:layout_marginLeft="@dimen/MargenesEditText"
+                android:layout_marginRight="@dimen/MargenesEditText"
+                android:layout_marginBottom="@dimen/MargenesEditText"
+                android:background="#396C52E1"
+                android:gravity="center"
                 android:hint="@string/PrecioHint"
                 android:inputType="number"
-                android:textSize="@dimen/txtSize" />
-
-            <TextView
-                android:id="@+id/txtCategoria"
-                android:layout_width="@dimen/txtWidth"
-                android:layout_height="@dimen/txtHeight"
-                android:text="@string/Categoria"
-                android:textSize="@dimen/txtSize" />
-
-            <Spinner
-                android:id="@+id/spinnerCategoria"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:entries="@array/Categorias"
-                android:text="Seleccione Categoria" />
+                android:textSize="@dimen/editTxtSize" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/Button_Categorias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:clickable="true"
+                    android:cropToPadding="false"
+                    android:onClick="ir_Categorias"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+                <ImageView
+                    android:id="@+id/imagen_Categoria"
+                    android:layout_width="30dp"
+                    android:layout_height="28dp" />
+
+                <TextView
+                    android:id="@+id/txtCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/CategoriaHint"
+                    android:textSize="@dimen/editTxtSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/txtDescuento"
-                    android:layout_width="@dimen/txtWidth"
-                    android:layout_height="@dimen/txtHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/MargenesEditText"
                     android:text="@string/DescEnvio"
                     android:textSize="@dimen/txtSize" />
 
                 <Switch
                     android:id="@+id/switchDescuento"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/txtHeight"
+                    android:layout_height="wrap_content"
                     android:checked="false"
-                    android:gravity="end"
                     android:onClick="ActivarDescuento" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
@@ -137,12 +186,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:onClick="ActivarRetiro"
-                android:text="@string/Retiro" />
+                android:text="@string/Retiro"
+                android:textSize="@dimen/txtSize" />
 
             <TextView
                 android:id="@+id/txtRetiro"
-                android:layout_width="@dimen/txtWidth"
-                android:layout_height="@dimen/txtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MargenesEditText"
                 android:text="@string/DirRetiro"
                 android:textSize="@dimen/txtSize"
                 android:visibility="gone" />
@@ -150,29 +201,42 @@
             <EditText
                 android:id="@+id/editRetiro"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/editTextlayout_height"
+                android:layout_marginLeft="@dimen/MargenesEditText"
+                android:layout_marginRight="@dimen/MargenesEditText"
+                android:layout_marginBottom="@dimen/MargenesEditText"
+                android:background="#396C52E1"
+                android:gravity="center"
                 android:hint="@string/RetiroHint"
-                android:textSize="@dimen/txtSize"
+                android:textSize="@dimen/editTxtSize"
                 android:visibility="gone" />
 
             <CheckBox
                 android:id="@+id/checkBoxTerminos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/Terminos" />
-
-            <Button
-                android:id="@+id/buttonAceptar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:onClick="ValidarCampos"
-                android:text="@string/Publicar"
-                android:textColor="@color/negro"
-                android:textSize="@dimen/txtBotonSize" />
+                android:text="@string/Terminos"
+                android:textSize="@dimen/txtSize" />
 
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:onClick="ValidarCampos"
+            android:text="@string/Publicar"
+            android:textColor="@color/negro"
+            android:textSize="@dimen/txtBotonSize" />
+    </LinearLayout>
 
 </LinearLayout>

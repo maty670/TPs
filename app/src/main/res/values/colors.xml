@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="azulclaro">#FF018786</color>
-    <color name="azuloscuro">#014545</color>
+
     <color name="purpura">#68286D</color>
     <color name="negro">#FF000000</color>
     <color name="white">#FFFFFF</color>
     <color name="verde">#208006</color>
 
 
-    <color name="Fondo">#D3333131</color>
+    <color name="Fondo">#FFFFFF</color>
+    <color name="ToolBarrColor">#FA0422B6</color>
+
 
     <color name="amarillo">#BA9A3E</color>
     <color name="blanco">#FDFEFF</color>
-    <color name="gris">#838282</color>
+    <color name="gris">#716F6F</color>
+    <color name="azul">#D506069E</color>
+    <color name="azulclaro">#4B06069E</color>
+    <color name="celeste">#08D1D1</color>
+
+
 
 
 
