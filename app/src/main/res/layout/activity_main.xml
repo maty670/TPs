@@ -24,7 +24,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -43,7 +43,6 @@
                 android:layout_marginRight="@dimen/MargenesEditText"
                 android:layout_marginBottom="@dimen/MargenesEditText"
                 android:background="#396C52E1"
-                android:gravity="center"
                 android:hint="@string/TituloHint"
                 android:textSize="@dimen/editTxtSize" />
 
@@ -63,7 +62,6 @@
                 android:layout_marginRight="@dimen/MargenesEditText"
                 android:layout_marginBottom="@dimen/MargenesEditText"
                 android:background="#396C52E1"
-                android:gravity="center"
                 android:hint="@string/DescripcionHint"
                 android:inputType="textMultiLine"
                 android:textSize="@dimen/editTxtSize" />
@@ -85,7 +83,6 @@
                 android:layout_marginRight="@dimen/MargenesEditText"
                 android:layout_marginBottom="@dimen/MargenesEditText"
                 android:background="#396C52E1"
-                android:gravity="center"
                 android:hint="@string/CorreoHint"
                 android:inputType="textEmailAddress"
                 android:textSize="@dimen/editTxtSize" />
@@ -106,7 +103,6 @@
                 android:layout_marginRight="@dimen/MargenesEditText"
                 android:layout_marginBottom="@dimen/MargenesEditText"
                 android:background="#396C52E1"
-                android:gravity="center"
                 android:hint="@string/PrecioHint"
                 android:inputType="number"
                 android:textSize="@dimen/editTxtSize" />
@@ -172,6 +168,7 @@
                     android:id="@+id/textViewDescuento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="0%"
                     android:visibility="gone" />
 
                 <SeekBar
@@ -206,7 +203,6 @@
                 android:layout_marginRight="@dimen/MargenesEditText"
                 android:layout_marginBottom="@dimen/MargenesEditText"
                 android:background="#396C52E1"
-                android:gravity="center"
                 android:hint="@string/RetiroHint"
                 android:textSize="@dimen/editTxtSize"
                 android:visibility="gone" />
@@ -232,7 +228,6 @@
             android:id="@+id/buttonAceptar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
             android:onClick="ValidarCampos"
             android:text="@string/Publicar"
             android:textColor="@color/negro"
